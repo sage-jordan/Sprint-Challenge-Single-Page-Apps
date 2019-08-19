@@ -2,6 +2,7 @@ import React from "react";
 import { Card, Image } from 'semantic-ui-react';
 
 export default function CharacterCard(props) {
+  // console.log(props);
   return (
     <Card>
       <Image src={props.character.image} wrapped ui={false} />
