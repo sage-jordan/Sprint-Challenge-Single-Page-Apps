@@ -12,8 +12,6 @@ export default function App() {
       <Header />
       <TabNav />
       <AppRouter />
-      <CharacterList />
-      <LocationsList />
     </main>
   );
 }

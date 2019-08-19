@@ -3,19 +3,17 @@ import { Card } from 'semantic-ui-react';
 
 
 export default function LocationCard(props) {
+  console.log(props);
   return (
     <Card>
       <Card.Content>
-        <Card.Header>{props.name}</Card.Header>
+        <Card.Header>{props.location.name}</Card.Header>
         <Card.Meta>
-          <span className='type'>Type: {props.type}</span>
+          <span className='type'>Type: {props.location.type}</span>
         </Card.Meta>
         <Card.Description>
-          <span className="dimension">Dimension: {props.dimension}</span>
+          <span className="dimension">Dimension: {props.location.dimension}</span>
         </Card.Description>
-      </Card.Content>
-      <Card.Content extra>
-        <span>Residents: {props.residents}</span>
       </Card.Content>
   </Card>
   )

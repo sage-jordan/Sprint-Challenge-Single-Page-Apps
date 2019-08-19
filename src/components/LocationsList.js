@@ -10,7 +10,7 @@ export default function LocationsList() {
     //  Important: verify the 2nd `useEffect` parameter: the dependancies array!
     axios.get("https://rickandmortyapi.com/api/location/")
       .then(res => {
-        console.log(res);
+        // console.log(res);
         setLocations(res.data.results);
       })
       .catch(err => console.log(err));
