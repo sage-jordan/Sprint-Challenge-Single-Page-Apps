@@ -8,23 +8,25 @@ export default function TabNav() {
         { menuItem: 'Home', render: () => {
         return (
             <Tab.Pane>
-                <Icon name='home' />
-                Home
+                <NavLink to="/about">
+                    <Icon name='home' />
+                    Home
+                </NavLink>
             </Tab.Pane>
         )} },
         { menuItem: 'Characters', render: () => {
         return (
-            <Tab.Pane>
+            <NavLink to="/users">
                 <Icon name='users' />
-                Characters
-            </Tab.Pane>
+                Users
+            </NavLink>
         )} },
         { menuItem: 'Location', render: () => {
         return (
-            <Tab.Pane>
+            <NavLink to="/location">
                 <Icon name='map marker alternate' />
                 Location
-            </Tab.Pane>
+            </NavLink>
         )} },
       ]
       
