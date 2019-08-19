@@ -1,5 +1,5 @@
 import React from "react";
-import Card from 'semantic-ui-react';
+import { Card, Image } from 'semantic-ui-react';
 
 export default function CharacterCard(props) {
   return (
@@ -17,6 +17,6 @@ export default function CharacterCard(props) {
       <Card.Content extra>
         <span>Origin: {props.character.origin.name}</span>
       </Card.Content>
-  </Card>
+    </Card>
     );
 }
